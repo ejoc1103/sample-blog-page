@@ -1,0 +1,116 @@
+.container {
+  border: 3px solid black;
+}
+header {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+}
+.nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+  align-items: center;
+}
+.topStories {
+  min-height: 50vh;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "art art art";
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+#subHeadOne {
+  grid-area: title;
+}
+#topStoryOne {
+  grid-area: art;
+}
+#topStoryTwo {
+  grid-area: art;
+}
+#topStoryThree {
+  grid-area: art;
+}
+/* grid-template-areas:
+"nav"
+"subHeader1"
+"blog1"
+"blog2"
+"blog3"
+"subHeader2"
+"blog4"
+"blog5"
+"blog6"
+"blog7"
+"footer"
+} */
+div {
+  border: 3px solid black;
+}
+@media (max-width: 426px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(200px, auto);
+    margin: 10px;
+    padding: 10px;
+  }
+
+  #title {
+    grid-area: head;
+  }
+
+  #subscribe {
+    border: 3px solid black;
+    grid-area: bottomL;
+  }
+  #search {
+    border: 3px solid black;
+    grid-area: bottomR;
+  }
+}
+/* blog images */
+.photoBox {
+  width: 350px;
+  height: 350px;
+  border: 1px solid red;
+  background: black;
+}
+#photo1 {
+  background-image: url("../images/tree.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo2 {
+  background-image: url("../images/lakeview.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo3 {
+  background-image: url("../images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo4 {
+  background-image: url("../images/robot.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo5 {
+  background-image: url("../images/car.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo6 {
+  background-image: url("../images/dumbbell.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#photo7 {
+  background-image: url("../images/bicycle.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
