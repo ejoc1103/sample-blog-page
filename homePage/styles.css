@@ -1,15 +1,27 @@
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 20px 1fr 20px;
   border: 3px solid black;
-  grid-gap: 1em;
+  grid-column-gap: 200px;
 }
 /*header area */
 #header {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "a b c";
 }
-
+#title {
+  display: grid;
+  grid-area: b;
+}
+#subscribe {
+  display: grid;
+  grid-area: a;
+}
+#search {
+  display: grid;
+  grid-area: c;
+}
 /*top stories section */
 .topStories {
   display: grid;
@@ -17,7 +29,12 @@
 }
 .topStory {
   display: grid;
+  grid-template-columns: 1fr 2fr;
   justify-content: end;
+}
+.intro {
+  display: grid;
+  grid-column: span 2;
 }
 #subHeadOne {
   display: grid;
@@ -29,6 +46,21 @@
 .otherStories {
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+.otherStoryA {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.otherStoryB {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "topL topR"
+    "bottomL bottomR";
+}
+#infoPlacement {
+  display: grid;
+  grid-area: bottomR;
 }
 #subHeadTwo {
   display: grid;
@@ -70,9 +102,11 @@
   background-image: url("../images/dumbbell.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  grid-area: topR;
 }
 #photo7 {
   background-image: url("../images/bicycle.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  grid-area: topR;
 }
