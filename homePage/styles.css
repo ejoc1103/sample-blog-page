@@ -1,8 +1,37 @@
+/* font-family: 'Merriweather', serif;
+
+font-family: 'Roboto', sans-serif; 
+
+Google fonts
+*/
+
+body {
+  background-color: #c8c8c8;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
 .container {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
-  border: 3px solid black;
-  grid-column-gap: 200px;
+  grid-template-columns: 100px 1fr 100px;
+}
+
+footer {
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 25px;
 }
 /*header area */
 #header {
@@ -13,14 +42,37 @@
 #title {
   display: grid;
   grid-area: b;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
 }
 #subscribe {
   display: grid;
   grid-area: a;
+  justify-content: start;
+}
+.button {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  padding: 2px 20px;
+  color: black;
+  background-color: blue;
+  display: grid;
+  align-items: center;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #496fc0; /* blue */
+  color: white;
 }
 #search {
   display: grid;
   grid-area: c;
+  justify-content: end;
 }
 /*top stories section */
 .topStories {
@@ -31,6 +83,8 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   justify-content: end;
+  border: 2px dotted white;
+  grid-gap: 10px;
 }
 .intro {
   display: grid;
@@ -40,6 +94,8 @@
   display: grid;
   grid-column: span 3;
   justify-content: center;
+  background-color: black;
+  color: white;
 }
 
 /*more stories area */
@@ -50,6 +106,8 @@
 .otherStoryA {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  border: 2px dotted white;
+  grid-gap: 10px;
 }
 .otherStoryB {
   display: grid;
@@ -57,22 +115,31 @@
   grid-template-areas:
     "topL topR"
     "bottomL bottomR";
+  border: 2px dotted white;
+  grid-gap: 10px;
 }
 #infoPlacement {
   display: grid;
-  grid-area: bottomR;
+  grid-area: topR;
 }
 #subHeadTwo {
   display: grid;
   grid-column: span 2;
   justify-content: center;
+  background-color: black;
+  color: white;
 }
 
 /* blog images */
-.photoBox {
-  width: 9em;
-  height: 9em;
+.mainPhotoBox {
+  width: 17em;
+  height: 17em;
 }
+.secondPhotoBox {
+  width: 10em;
+  height: 10em;
+}
+
 #photo1 {
   background-image: url("../images/tree.jpg");
   background-repeat: no-repeat;
@@ -102,11 +169,106 @@
   background-image: url("../images/dumbbell.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  grid-area: topR;
 }
 #photo7 {
   background-image: url("../images/bicycle.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  grid-area: topR;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    display: grid;
+    grid-template-columns: 75px 1fr 75px;
+  }
+  .topStories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #lastTopStory {
+    display: grid;
+    grid-column: span 2;
+
+    grid-template-areas:
+      "topL topR"
+      "bottomL bottomR";
+  }
+  #photo3 {
+    background-image: url("../images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-row: span 2;
+  }
+  #lastTopStoryHeader {
+    display: grid;
+    grid-area: bottomR;
+  }
+  #lastTopStoryIntro {
+    display: grid;
+    grid-area: topR;
+  }
+}
+
+@media (max-width: 460px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gutter {
+    display: none;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "a b"
+      "a c";
+  }
+  #title {
+    display: grid;
+    grid-area: a;
+    justify-content: center;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  #subscribe {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-area: b;
+  }
+
+  #search {
+    display: grid;
+    justify-content: center;
+    grid-area: c;
+  }
+  .topStories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .topStory {
+    display: grid;
+    grid-column: span 2;
+
+    grid-template-areas:
+      "topL topR"
+      "bottomL bottomR";
+  }
+  #photo1 {
+    background-image: url("../images/tree.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-area: topL;
+  }
+  .intro {
+    display: grid;
+    grid-area: topR;
+  }
+  .topStoryHeader {
+    display: grid;
+    grid-area: bottomR;
+  }
 }

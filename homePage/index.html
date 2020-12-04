@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -13,11 +18,10 @@
         <nav id="header">
           <h1 id="title">Ed Writes About Everything</h1>
 
-          <div>
-            <a id="subscribe" href="#">Subscribe</a>
-          </div>
-          <div>
-            <a id="search" href="#">Search</a>
+          <button id="subscribe" class="button">Subscribe</button>
+
+          <div id="search">
+            <a  href="#">Search</a>
           </div>
         </nav>
 
@@ -27,42 +31,68 @@
           </div>
 
           <div class="topStory">
-            <div id="photo1" class="photoBox"></div>
-            <div>
+            <div id="photo1" class="mainPhotoBox"></div>
+            <div class = "topStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <h5>Nov 12</h5>
             </div>
-            <p class="intro">
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
+            <div class="intro">
+              <p>
+                Lorem ipsum dolor sit amet
+                <strong>consectetur</strong> adipisicing elit. Tempora, ipsum.
+                Quo repellendus officiis quod hic minus saepe eum excepturi vel
+                totam, earum accusantium illo. Ipsum eos asperiores molestiae
+                quaerat sint dignissimos, magni consectetur iure blanditiis,
+                <em>adipisci reiciendis</em> officia nemo ducimus excepturi
+                molestias cupiditate suscipit quod distinctio nihil? Tenetur,
+                illum dicta.
+              </p>
+              <a href="#">Read More</a>
+            </div>
           </div>
 
           <div class="topStory">
-            <div id="photo2" class="photoBox"></div>
-            <div>
+            <div id="photo2" class="mainPhotoBox"></div>
+            <div class = "topStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <h5>Nov 13</h5>
             </div>
-            <p class="intro">
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
+            <div class="intro">
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod
+                dolor a error nam, numquam, sed incidunt laboriosam, neque
+                nostrum soluta ratione consequatur <em>dolorem illo</em> veniam
+                labore corrupti magni beatae libero laudantium magnam
+                recusandae. In placeat dolorum, alias
+                <strong>inventore</strong> fuga a possimus laudantium eos,
+                molestiae atque unde velit blanditiis. Alias, unde?
+              </p>
+              <a href="#">Read More</a>
+            </div>
           </div>
 
-          <div class="topStory">
-            <div id="photo3" class="photoBox"></div>
-            <div>
+          <div class="topStory" id="lastTopStory">
+            <div id="photo3" class="mainPhotoBox"></div>
+            <div id="lastTopStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <h5>Nov 8</h5>
             </div>
-            <p class="intro">
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
+            <div class="intro" id="lastTopStoryIntro">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Mollitia explicabo molestiae dolore ullam illum autem sunt,
+                consequuntur eum <em>placeat eveniet</em> minus, tenetur
+                consequatur minima quos! Facere dicta ipsa impedit ipsam quae.
+                Ab recusandae, a unde debitis praesentium dignissimos
+                perspiciatis obcaecati consectetur
+                <strong>quidem cumque</strong> sit rerum, autem nostrum
+                similique corporis laudantium.
+              </p>
+              <a href="#">Read More</a>
+            </div>
           </div>
         </div>
         <!-- top stories section ends -->
@@ -71,62 +101,114 @@
             <h2>Some other things you might enjoy</h2>
           </div>
 
-          <div class="otherStoryA">
-            <div id="photo4" class="photoBox"></div>
-            <p>
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
+          <div class="otherStoryA" id="otherStoryC">
             <div>
+              <div id="photo4" class="secondPhotoBox"></div>
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
               <h5>Nov 3</h5>
             </div>
-          </div>
-
-          <div class="otherStoryA">
-            <div id="photo5" class="photoBox"></div>
-            <p>
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
             <div>
-              <h3>Title of this article</h3>
-              <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Recusandae laboriosam eveniet, ipsa quae qui nobis hic doloribus
+                minima ipsam vel! Vero vel, quis voluptates quibusdam facilis
+                ipsa iusto, veniam numquam earum assumenda quae, laboriosam
+                molestias porro ab qui pariatur aspernatur eius laborum impedit
+                obcaecati! Cum, quaerat sed quae dolor quos in inventore
+                consectetur qui facilis iusto debitis nobis iste adipisci quam
+                dolores! Minus vitae accusantium, neque earum repellendus dicta!
+                Numquam, cumque? Inventore ex quo voluptate tenetur fugiat sit
+                sint iste porro, laboriosam nesciunt nisi veniam temporibus
+                nobis officia aut et.
+              </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
-          <div class="otherStoryB">
-            <div id="photo6" class="photoBox"></div>
-            <p>
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
-            <div id="infoPlacement">
+          <div class="otherStoryA" id = "otherStoryD">
+            <div>
+              <div id="photo5" class="secondPhotoBox"></div>
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <h5>Nov 20</h5>
+            </div>
+            <div class="otherInfo">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                debitis ad iusto tenetur? Dicta, sunt fugit voluptatibus
+                blanditiis voluptate delectus deleniti magnam. Repudiandae magni
+                quaerat sapiente doloribus reprehenderit laboriosam eaque
+                aliquid, quo magnam possimus laudantium odit, provident eveniet
+                similique et animi nihil molestias culpa natus quia quas
+                perspiciatis recusandae facere commodi. Vel laborum eveniet
+                tempora aspernatur delectus voluptatem sed quam iusto non
+                officiis quos, rem maiores culpa earum est! Dolores dolor, quas
+                dicta modi, aperiam perspiciatis corrupti vitae optio
+                perferendis temporibus iusto velit dolorum ducimus, magnam
+                pariatur eligendi omnis praesentium?
+              </p>
+              <a href="#">Read More</a>
             </div>
           </div>
 
-          <div class="otherStoryB">
-            <div id="photo7" class="photoBox"></div>
-            <p>
-              A little snippet from the article that brings you right in and
-              gets you interested
-            </p>
+          <div class="otherStoryB" id="otherStoryC">
             <div id="infoPlacement">
+              <div id="photo6" class="secondPhotoBox"></div>
+              <div>
+                <h3>Title of this article</h3>
+                <h4>Author of this Article</h4>
+                <h5>Dec 5</h5>
+              </div>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                tempore repudiandae veniam sapiente corporis? Voluptatibus
+                officia fugiat veritatis blanditiis labore neque reiciendis
+                necessitatibus culpa! Veritatis nisi culpa ad delectus
+                praesentium modi ex magni dignissimos incidunt consequuntur iure
+                necessitatibus beatae voluptates expedita atque dolores,
+                cupiditate laborum obcaecati suscipit laboriosam dolorem. Nobis
+                repudiandae dignissimos porro impedit quod rerum ipsa? Eos magni
+                quas voluptatibus eligendi similique nostrum illo unde, fuga vel
+                blanditiis deleniti exercitationem temporibus a sit sint
+                suscipit dolor. Cumque veniam reiciendis quis omnis, suscipit
+                doloribus consequuntur cum natus aperiam sequi culpa.
+              </p>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+
+          <div class="otherStoryB" id = "otherStoryD">
+            <div id="infoPlacement">
+              <div id="photo7" class="secondPhotoBox"></div>
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
-              <h5>Nov 3</h5>
+              <h5>Oct 25</h5>
+            </div>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam consequatur quod accusantium aspernatur voluptatum
+                voluptatem, sint maiores aliquam quae incidunt deserunt
+                temporibus blanditiis deleniti minus quas ex ratione vel qui.
+                Dolore illum saepe ad tempore. Porro amet et odit labore quos id
+                mollitia consequatur atque maiores nesciunt quaerat, quisquam
+                animi accusantium in praesentium modi culpa minima voluptate,
+                quis rem placeat quibusdam! Molestias illum vel voluptate minus
+                neque alias, corporis dignissimos provident qui perspiciatis
+                eveniet? Illum, quas atque qui corrupti voluptate ipsa at
+                doloremque! Blanditiis enim excepturi natus, quia saepe
+                praesentium!
+              </p>
+              <a href="#">Read More</a>
             </div>
           </div>
         </div>
-
-        <footer>Here's a footer</footer>
       </div>
       <div class="gutter"></div>
     </div>
+    <footer>Ed OConnor for Udacity 2020!</footer>
   </body>
 </html>
