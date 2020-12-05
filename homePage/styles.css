@@ -27,15 +27,14 @@ footer {
   grid-template-columns: 100px 1fr 100px;
 }
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 8px;
-  width: 100px;
-  height: 40px;
-  padding: 2px 20px;
   color: black;
   background-color: blue;
-  display: grid;
-  align-items: center;
+  padding: 15px 25px;
   font-size: 15px;
   transition-duration: 0.4s;
   cursor: pointer;

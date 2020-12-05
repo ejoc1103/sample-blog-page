@@ -35,17 +35,15 @@ form {
 h2 {
   text-align: center;
 }
-
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   border-radius: 8px;
-  width: 100px;
-  height: 40px;
-  padding: 2px 20px;
   color: black;
-  background-color: chartreuse;
-  display: grid;
-  align-items: center;
+  background-color: blue;
+  padding: 15px 25px;
   font-size: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
