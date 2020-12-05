@@ -10,11 +10,61 @@ h5,
 h6 {
   font-family: "Merriweather", serif;
 }
+footer {
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 25px;
+}
+/* classes */
 .container {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 20px 0 20px;
 }
+.button {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  padding: 2px 20px;
+  color: black;
+  background-color: blue;
+  display: grid;
+  align-items: center;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #496fc0;
+  color: white;
+}
+.imgBox {
+  width: 17em;
+  height: 17em;
+}
+.gutter {
+  display: none;
+}
+.avtBox {
+  width: 10em;
+  height: 10em;
+}
+.subHeader {
+  background-color: white;
+  text-align: center;
+}
+.socialLinks {
+  border: 5px dotted black;
+  float: right;
+}
+/* ids */
 #header {
   display: flex;
   flex-direction: row;
@@ -36,56 +86,15 @@ h6 {
   text-align: center;
   font-weight: bold;
 }
-.button {
-  border: none;
-  border-radius: 8px;
-  width: 100px;
-  height: 40px;
-  padding: 2px 20px;
-  color: black;
-  background-color: blue;
-  display: grid;
-  align-items: center;
-  font-size: 15px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #496fc0; /* blue */
-  color: white;
-}
 #search {
   display: grid;
   justify-content: end;
-}
-.gutter {
-  display: none;
-}
-footer {
-  background-color: white;
-  font-size: 2em;
-  font-weight: bold;
-  color: black;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  padding: 25px;
-}
-
-.avtBox {
-  width: 10em;
-  height: 10em;
 }
 #avtImg {
   background-image: url("../images/img_avatar.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 50%;
-}
-.imgBox {
-  width: 17em;
-  height: 17em;
 }
 #imgOne {
   background-image: url("../images/tree.jpg");
@@ -147,28 +156,22 @@ footer {
   display: flex;
   flex-wrap: wrap;
 }
-
 #firstBlock > div {
   flex: 1;
 }
 #firstBlock > p {
   flex: 2;
 }
-.subHeader {
-  background-color: white;
-  text-align: center;
-}
-.socialLinks {
-  border: 5px dotted black;
-  float: right;
-}
-
+/* media */
 @media (min-width: 769px) {
   p,
   a {
     font-size: 2em;
   }
-
+  footer {
+    font-size: 2.5em;
+  }
+  /* classes */
   .container {
     display: grid;
     grid-template-columns: 100px 1fr 100px;
@@ -184,9 +187,12 @@ footer {
   .subHeader {
     font-size: 3em;
   }
-  footer {
-    font-size: 2.5em;
+  .avtBox {
+    width: 18em;
+    height: 18em;
+    grid-area: a;
   }
+  /* ids */
   #author {
     display: grid;
     grid-gap: 10px;
@@ -199,11 +205,6 @@ footer {
   #authInfo {
     display: grid;
     grid-area: b;
-  }
-  .avtBox {
-    width: 18em;
-    height: 18em;
-    grid-area: a;
   }
   #header {
     display: grid;

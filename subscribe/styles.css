@@ -10,12 +10,6 @@ h5,
 h6 {
   font-family: "Merriweather", serif;
 }
-.container {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: 1fr;
-  margin-bottom: 100px;
-}
 footer {
   background-color: white;
   font-size: 2em;
@@ -27,18 +21,21 @@ footer {
   height: 50px;
   padding: 25px;
 }
-/* header area */
-#header {
+.container {
   display: grid;
-  grid-template-areas: "a a a a b b";
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  margin-bottom: 100px;
 }
-#title {
+form {
   display: grid;
-  grid-area: a;
-  justify-content: center;
-  font-size: 3em;
-  font-weight: bold;
+  grid-gap: 20px;
+  grid-template-areas: 1fr;
 }
+h2 {
+  text-align: center;
+}
+
 .button {
   border: none;
   border-radius: 8px;
@@ -65,19 +62,18 @@ footer {
   display: grid;
   background-color: blue;
 }
-form {
+#header {
   display: grid;
-  grid-gap: 20px;
-  grid-template-areas: 1fr;
+  grid-template-areas: "a a a a b b";
 }
-h2 {
-  text-align: center;
+#title {
+  display: grid;
+  grid-area: a;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
-  .container {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-  }
   form {
     display: grid;
     grid-gap: 20px;
@@ -86,6 +82,11 @@ h2 {
       "a a"
       "b c";
   }
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+
   #formTitle {
     display: grid;
     grid-area: a;

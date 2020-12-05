@@ -1,10 +1,3 @@
-/* font-family: 'Merriweather', serif;
-
-font-family: 'Roboto', sans-serif; 
-
-Google fonts
-*/
-
 body {
   background-color: #c8c8c8;
   font-family: "Roboto", sans-serif;
@@ -17,11 +10,6 @@ h5,
 h6 {
   font-family: "Merriweather", serif;
 }
-.container {
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
-}
-
 footer {
   background-color: white;
   font-size: 2em;
@@ -33,23 +21,10 @@ footer {
   height: 50px;
   padding: 25px;
 }
-/*header area */
-#header {
+/* classes */
+.container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-areas: "a b c";
-}
-#title {
-  display: grid;
-  grid-area: b;
-  justify-content: center;
-  font-size: 3em;
-  font-weight: bold;
-}
-#subscribe {
-  display: grid;
-  grid-area: a;
-  justify-content: start;
+  grid-template-columns: 100px 1fr 100px;
 }
 .button {
   border: none;
@@ -69,14 +44,6 @@ footer {
   background-color: #496fc0; /* blue */
   color: white;
 }
-#search {
-  display: grid;
-  height: 25%;
-  width: 50%;
-  grid-area: c;
-  justify-content: end;
-}
-/*top stories section */
 .topStories {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -92,15 +59,6 @@ footer {
   display: grid;
   grid-column: span 2;
 }
-#subHeadOne {
-  display: grid;
-  grid-column: span 3;
-  justify-content: center;
-  background-color: black;
-  color: white;
-}
-
-/*more stories area */
 .otherStories {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -120,6 +78,46 @@ footer {
   border: 2px dotted white;
   grid-gap: 10px;
 }
+.mainPhotoBox {
+  width: 17em;
+  height: 17em;
+}
+.secondPhotoBox {
+  width: 10em;
+  height: 10em;
+}
+/* ids */
+#header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "a b c";
+}
+#title {
+  display: grid;
+  grid-area: b;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+#subscribe {
+  display: grid;
+  grid-area: a;
+  justify-content: start;
+}
+#search {
+  display: grid;
+  height: 25%;
+  width: 50%;
+  grid-area: c;
+  justify-content: end;
+}
+#subHeadOne {
+  display: grid;
+  grid-column: span 3;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
 #infoPlacement {
   display: grid;
   grid-area: topR;
@@ -131,17 +129,6 @@ footer {
   background-color: black;
   color: white;
 }
-
-/* blog images */
-.mainPhotoBox {
-  width: 17em;
-  height: 17em;
-}
-.secondPhotoBox {
-  width: 10em;
-  height: 10em;
-}
-
 #photo1 {
   background-image: url("../images/tree.jpg");
   background-repeat: no-repeat;
@@ -177,7 +164,7 @@ footer {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
+/* media */
 @media (max-width: 1300px) {
   .container {
     display: grid;
@@ -213,6 +200,7 @@ footer {
 }
 
 @media (max-width: 460px) {
+  /* classes */
   .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -220,6 +208,36 @@ footer {
   .gutter {
     display: none;
   }
+  .topStories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .topStory {
+    display: grid;
+    grid-column: span 2;
+
+    grid-template-areas:
+      "topL topR"
+      "bottomL bottomR";
+  }
+  .topStoryHeader {
+    display: grid;
+    grid-area: bottomL;
+  }
+  .otherStories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mainPhotoBox {
+    width: 10em;
+    height: 10em;
+  }
+  .intro {
+    display: grid;
+    grid-column: span 1;
+    grid-area: topR;
+  }
+  /* ids */
   #header {
     display: grid;
     grid-gap: 20px;
@@ -235,48 +253,25 @@ footer {
     font-size: 3em;
     font-weight: bold;
   }
+  #photo3 {
+    background-image: url("../images/mountains.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: grid;
+    grid-column: span 1;
+  }
   #subscribe {
     display: grid;
     justify-content: center;
     align-items: center;
     grid-area: b;
   }
-
   #search {
     display: grid;
     height: 10%;
     width: 20%;
     justify-content: center;
     grid-area: c;
-  }
-  .topStories {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .topStory {
-    display: grid;
-    grid-column: span 2;
-
-    grid-template-areas:
-      "topL topR"
-      "bottomL bottomR";
-  }
-  /* #photo1 {
-    background-image: url("../images/tree.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  } */
-  .intro {
-    display: flex;
-    grid-area: topR;
-  }
-  .topStoryHeader {
-    display: grid;
-    grid-area: bottomL;
-  }
-  .otherStories {
-    display: grid;
-    grid-template-columns: 1fr;
   }
   #otherStoryC {
     display: grid;
@@ -294,34 +289,25 @@ footer {
       "topL topR"
       "bottomL bottomR";
   }
-  .mainPhotoBox {
-    width: 10em;
-    height: 10em;
-  }
   #topStoryHeader {
     display: grid;
     grid-area: topR;
   }
-  .intro {
+  #lastTopStory {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #lastTopStoryIntro {
     display: grid;
     grid-column: span 1;
     grid-area: topR;
   }
-  #lastTopStroyIntro {
-    display: grid;
-    grid-column: span 1;
-    grid-area: topR;
-  }
-  #lastTopStroyHeader {
+  #lastTopStoryHeader {
     display: grid;
     grid-area: bottomL;
   }
-  #lastTopStory {
+  #photo3 {
     display: grid;
-    grid-column: span 2;
-
-    grid-template-areas:
-      "topL topR"
-      "bottomL bottomR";
+    grid-area: topR;
   }
 }
