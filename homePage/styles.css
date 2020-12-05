@@ -265,16 +265,14 @@ footer {
     background-image: url("../images/tree.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: grid;
-    grid-area: topL;
   } */
   .intro {
-    display: grid;
+    display: flex;
     grid-area: topR;
   }
   .topStoryHeader {
     display: grid;
-    grid-area: bottomR;
+    grid-area: bottomL;
   }
   .otherStories {
     display: grid;
@@ -289,6 +287,36 @@ footer {
       "bottomL bottomR";
   }
   #otherStroyD {
+    display: grid;
+    grid-column: span 2;
+
+    grid-template-areas:
+      "topL topR"
+      "bottomL bottomR";
+  }
+  .mainPhotoBox {
+    width: 10em;
+    height: 10em;
+  }
+  #topStoryHeader {
+    display: grid;
+    grid-area: topR;
+  }
+  .intro {
+    display: grid;
+    grid-column: span 1;
+    grid-area: topR;
+  }
+  #lastTopStroyIntro {
+    display: grid;
+    grid-column: span 1;
+    grid-area: topR;
+  }
+  #lastTopStroyHeader {
+    display: grid;
+    grid-area: bottomL;
+  }
+  #lastTopStory {
     display: grid;
     grid-column: span 2;
 

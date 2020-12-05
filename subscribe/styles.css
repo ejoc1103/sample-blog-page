@@ -1,0 +1,101 @@
+body {
+  background-color: #c8c8c8;
+  font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Merriweather", serif;
+}
+.container {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr;
+  margin-bottom: 100px;
+}
+footer {
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 25px;
+}
+/* header area */
+#header {
+  display: grid;
+  grid-template-areas: "a a a a b b";
+}
+#title {
+  display: grid;
+  grid-area: a;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+.button {
+  border: none;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  padding: 2px 20px;
+  color: black;
+  background-color: chartreuse;
+  display: grid;
+  align-items: center;
+  font-size: 15px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #496fc0; /* blue */
+  color: white;
+}
+#home {
+  display: grid;
+  grid-area: b;
+}
+#submit {
+  display: grid;
+  background-color: blue;
+}
+form {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas: 1fr;
+}
+h2 {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+  }
+  form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "a a"
+      "b c";
+  }
+  #formTitle {
+    display: grid;
+    grid-area: a;
+  }
+  #inputOne {
+    display: grid;
+    grid-area: b;
+  }
+  #inputTwo {
+    display: grid;
+    grid-area: c;
+  }
+}
