@@ -12,22 +12,29 @@ h6 {
 }
 .container {
   display: grid;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 1fr;
+  padding: 0 20px 0 20px;
 }
 #header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 #title {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
+  padding: 5px;
 }
 #subscribe {
   display: grid;
   justify-content: start;
+}
+#quote {
+  text-align: center;
+  font-weight: bold;
 }
 .button {
   border: none;
@@ -84,4 +91,140 @@ footer {
   background-image: url("../images/tree.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  float: left;
+}
+#imgTwo {
+  background-image: url("../images/lakeview.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#imgThree {
+  background-image: url("../images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#imgFour {
+  background-image: url("../images/robot.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#imgFive {
+  background-image: url("../images/car.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#imgSix {
+  background-image: url("../images/dumbbell.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#imgSeven {
+  background-image: url("../images/bicycle.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+#icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home {
+  background-color: chartreuse;
+}
+#author {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+}
+#authBio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#firstBlock > div {
+  flex: 1;
+}
+#firstBlock > p {
+  flex: 2;
+}
+.subHeader {
+  background-color: white;
+  text-align: center;
+}
+.socialLinks {
+  border: 5px dotted black;
+  float: right;
+}
+
+@media (min-width: 769px) {
+  p,
+  a {
+    font-size: 2em;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    padding: 0 50px 0 50px;
+  }
+  .gutter {
+    display: grid;
+  }
+  .imgBox {
+    width: 30em;
+    height: 30em;
+  }
+  .subHeader {
+    font-size: 3em;
+  }
+  footer {
+    font-size: 2.5em;
+  }
+  #author {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "a a a b b c c c c";
+  }
+  #authBio {
+    display: grid;
+    grid-area: c;
+  }
+  #authInfo {
+    display: grid;
+    grid-area: b;
+  }
+  .avtBox {
+    width: 18em;
+    height: 18em;
+    grid-area: a;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "a a b";
+  }
+  #title {
+    display: grid;
+    grid-area: a;
+    justify-content: start;
+    font-size: 4em;
+    font-weight: bold;
+  }
+  #subscribe {
+    display: grid;
+    grid-area: b;
+    justify-content: start;
+  }
+  #search {
+    display: grid;
+    grid-area: b;
+    justify-content: start;
+  }
 }

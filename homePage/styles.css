@@ -71,6 +71,8 @@ footer {
 }
 #search {
   display: grid;
+  height: 25%;
+  width: 50%;
   grid-area: c;
   justify-content: end;
 }
@@ -220,6 +222,7 @@ footer {
   }
   #header {
     display: grid;
+    grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-areas:
       "a b"
@@ -241,6 +244,8 @@ footer {
 
   #search {
     display: grid;
+    height: 10%;
+    width: 20%;
     justify-content: center;
     grid-area: c;
   }
