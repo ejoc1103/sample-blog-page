@@ -104,7 +104,7 @@ footer {
   justify-content: start;
 }
 #search {
-  display: grid;
+  display: flex;
   height: 25%;
   width: 50%;
   grid-area: c;

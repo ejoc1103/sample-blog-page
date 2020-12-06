@@ -41,7 +41,7 @@ footer {
   cursor: pointer;
 }
 .button:hover {
-  background-color: #496fc0;
+  background-color: #496fc0; /* blue */
   color: white;
 }
 .imgBox {
