@@ -1,0 +1,24 @@
+#header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: "a b c";
+}
+#title {
+  display: grid;
+  grid-area: b;
+  justify-content: center;
+  font-size: 3em;
+  font-weight: bold;
+}
+#subscribe {
+  display: grid;
+  grid-area: a;
+  justify-content: start;
+}
+#search {
+  display: flex;
+  height: 25%;
+  width: 50%;
+  grid-area: c;
+  justify-content: end;
+}

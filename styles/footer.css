@@ -1,0 +1,11 @@
+footer {
+    background-color: white;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding: 25px;
+  }

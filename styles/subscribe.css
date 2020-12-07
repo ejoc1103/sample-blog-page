@@ -1,26 +1,5 @@
-body {
-  background-color: #c8c8c8;
-  font-family: "Roboto", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Merriweather", serif;
-}
-footer {
-  background-color: white;
-  font-size: 2em;
-  font-weight: bold;
-  color: black;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  padding: 25px;
-}
+@import "layout.css";
+@import "footer.css";
 .container {
   display: grid;
   grid-gap: 30px;
