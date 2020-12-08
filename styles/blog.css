@@ -2,7 +2,7 @@
 @import "footer.css";
 .container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 25px 1fr 25px;
   padding: 0 20px 0 20px;
 }
 .button {
@@ -26,9 +26,6 @@
   width: 17em;
   height: 17em;
 }
-.gutter {
-  display: none;
-}
 .avtBox {
   width: 10em;
   height: 10em;
@@ -36,10 +33,6 @@
 .subHeader {
   background-color: white;
   text-align: center;
-}
-.socialLinks {
-  border: 5px dotted black;
-  float: right;
 }
 /* ids */
 #header {
@@ -154,9 +147,6 @@
     display: grid;
     grid-template-columns: 100px 1fr 100px;
     padding: 0 50px 0 50px;
-  }
-  .gutter {
-    display: grid;
   }
   .imgBox {
     width: 30em;

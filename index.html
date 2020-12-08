@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./styles/home.css" />
   </head>
   <body>
@@ -42,7 +46,10 @@
             <h2>Top Stories</h2>
           </div>
           <div class="topStory">
-            <div id="photo1" class="mainPhotoBox"></div>
+            <figure>
+              <div id="photo1" class="mainPhotoBox"></div>
+              <figcaption>Beautiful Picture</figcaption>
+            </figure>
             <div class="topStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
@@ -64,7 +71,10 @@
           </div>
 
           <div class="topStory">
-            <div id="photo2" class="mainPhotoBox"></div>
+            <figure>
+              <div id="photo2" class="mainPhotoBox"></div>
+              <figcaption>Wonderful Picture</figcaption>
+            </figure>
             <div class="topStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
@@ -85,7 +95,10 @@
           </div>
 
           <div class="topStory" id="lastTopStory">
-            <div id="photo3" class="mainPhotoBox"></div>
+            <figure>
+              <div id="photo3" class="mainPhotoBox"></div>
+              <figcaption>Amazing Picture</figcaption>
+            </figure>
             <div id="lastTopStoryHeader">
               <h3>Title of this article</h3>
               <h4>Author of this Article</h4>
@@ -221,8 +234,13 @@
       </div>
       <!-- another gutter for the right side -->
       <div class="gutter"></div>
+      <!-- footer -->
+      <footer>
+        <div class="footer">Ed OConnor for Udacity 2020!</div>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-github"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </footer>
     </div>
-    <!-- footer -->
-    <footer>Ed OConnor for Udacity 2020!</footer>
   </body>
 </html>

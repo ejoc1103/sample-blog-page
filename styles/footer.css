@@ -1,11 +1,74 @@
 footer {
-    background-color: white;
-    font-size: 2em;
-    font-weight: bold;
-    color: black;
+  background-color: white;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  padding: 35px;
+  width: 100%;
+  grid-column: span 3;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+@media (max-width: 1100px) {
+  footer {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    padding: 25px;
+    font-size: 1.5em;
+    grid-template-areas:
+      "a a a"
+      "b c d";
   }
+  .fa {
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .footer {
+    display: grid;
+    grid-area: a;
+  }
+  .fa-linkedin {
+    display: grid;
+    grid-area: b;
+  }
+  .fa-twitter {
+    display: grid;
+    grid-area: c;
+  }
+  .fa-github {
+    display: grid;
+    grid-area: d;
+  }
+}
