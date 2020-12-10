@@ -4,6 +4,7 @@
 .container {
   display: grid;
   grid-template-columns: 100px 1fr 100px;
+  max-width: 100%;
 }
 .button {
   display: flex;
@@ -152,23 +153,24 @@
     grid-area: topR;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 930px) {
   /* classes */
   .container {
     display: grid;
-    grid-template-columns: 40px 1fr 20px;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .gutter {
+    display: none;
   }
   .topStories {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: "1fr";
   }
   .topStory {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-column: span 2;
-
-    grid-template-areas:
-      "topL topR"
-      "bottomL bottomR";
   }
   .topStoryHeader {
     display: grid;
@@ -190,11 +192,11 @@
   /* ids */
   #header {
     display: grid;
-    grid-gap: 20px;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "a b"
-      "a c";
+      "a"
+      "b"
+      "c";
   }
   #title {
     display: grid;
