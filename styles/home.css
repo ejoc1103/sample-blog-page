@@ -171,6 +171,7 @@
     display: flex;
     flex-wrap: wrap;
     grid-column: span 2;
+    justify-content: center;
   }
   .topStoryHeader {
     display: grid;
@@ -226,17 +227,20 @@
     grid-area: c;
   }
   #otherStoryC {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     grid-column: span 2;
+    justify-content: center;
 
     grid-template-areas:
       "topL topR"
       "bottomL bottomR";
   }
-  #otherStroyD {
-    display: grid;
+  #otherStoryD {
+    display: flex;
+    flex-wrap: wrap;
     grid-column: span 2;
-
+    justify-content: center;
     grid-template-areas:
       "topL topR"
       "bottomL bottomR";
@@ -248,6 +252,7 @@
   #lastTopStory {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   #lastTopStoryIntro {
     display: grid;

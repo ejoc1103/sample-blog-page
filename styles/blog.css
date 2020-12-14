@@ -53,7 +53,7 @@
   justify-content: start;
 }
 #quote {
-  font-size: 2em;
+  font-size: 1.3em;
   text-align: center;
   font-weight: bold;
 }
@@ -169,6 +169,9 @@
   #authBio {
     display: grid;
     grid-area: c;
+  }
+  #quote {
+    font-size: 2em;
   }
   #authInfo {
     display: grid;
